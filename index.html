@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NinjaAcademy - Plataforma de cursos de tecnologia, design e negócios. Estude com mentoria individual e conquiste sua certificação.">
-  <title>NinjaAcademy | Cursos de Elite & Certificação</title>
-  <!-- CSS Stylesheet -->
+  <meta name="description" content="NinjaAuto - Oficina Mecânica de alto desempenho. Simulador de orçamento online e agendamento rápido de revisões e serviços.">
+  <title>NinjaAuto | Oficina Mecânica Premium</title>
+  <!-- CSS Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,13 +15,14 @@
   <!-- Header -->
   <header>
     <div class="container header-container">
-      <a href="#" class="logo" id="logo">
-        <i class="fa-solid fa-graduation-cap"></i> Ninja<span>Academy</span>
+      <a href="#" class="logo" id="header-logo">
+        <i class="fa-solid fa-gears"></i> Ninja<span>Auto</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#simulador">Matrícula Online</a></li>
+        <li><a href="#" class="active">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#simulador">Orçamento</a></li>
+        <li><a href="#agendamento">Agendar Visita</a></li>
       </ul>
     </div>
   </header>
@@ -30,205 +31,208 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <span class="section-tag">Acelere sua Carreira</span>
-        <h1 class="hero-title">Domine as Habilidades do <span>Futuro Digital</span></h1>
-        <p class="hero-desc">
-          Cursos online práticos estruturados com mentores especialistas. Estude tecnologia, UX design ou gestão de negócios e atinja o próximo nível de empregabilidade.
+        <span class="section-tag">Performance & Segurança</span>
+        <h1 class="hero-title">Sua Oficina de<span>Confiança Máxima</span></h1>
+        <p class="hero-description">
+          Equipamentos de última geração, mecânicos altamente qualificados e total transparência. Use nosso simulador exclusivo abaixo para planejar sua revisão de forma rápida e justa.
         </p>
-        <div>
-          <a href="#cursos" class="btn-primary" id="explore-btn"><i class="fa-solid fa-arrow-right" style="margin-right: 8px;"></i> Explorar Cursos</a>
-          <a href="#simulador" class="btn-secondary" id="sim-btn"><i class="fa-solid fa-calculator" style="margin-right: 8px;"></i> Simular Investimento</a>
-        </div>
-        <div class="stats-bar">
-          <div class="stat-item">
-            <h4>15k+</h4>
-            <p>Alunos Ativos</p>
-          </div>
-          <div class="stat-item">
-            <h4>94%</h4>
-            <p>Empregabilidade</p>
-          </div>
-          <div class="stat-item">
-            <h4>4.8/5</h4>
-            <p>Avaliação Média</p>
-          </div>
-        </div>
+        <a href="#simulador" class="btn-primary" id="hero-cta-btn"><i class="fa-solid fa-calculator" style="margin-right: 8px;"></i> Simular Orçamento</a>
       </div>
-      <div class="hero-illustration">
-        <!-- SVG Graphic decoration for premium tech feel -->
-        <svg viewBox="0 0 400 400" width="100%" style="max-width: 400px; filter: drop-shadow(var(--shadow-glow-purple));">
-          <circle cx="200" cy="200" r="150" fill="none" stroke="url(#purpleGrad)" stroke-width="4" stroke-dasharray="10, 5" />
-          <circle cx="200" cy="200" r="120" fill="rgba(124, 58, 237, 0.05)" />
-          <polygon points="200,80 320,160 320,290 200,370 80,290 80,160" fill="none" stroke="url(#orangeGrad)" stroke-width="2" />
-          <!-- Animated element style icon -->
-          <g transform="translate(160, 160)">
-            <rect width="80" height="80" rx="15" fill="var(--bg-card)" stroke="var(--color-primary)" stroke-width="3" />
-            <path d="M25 40 L35 50 L55 30" fill="none" stroke="var(--color-accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-          </g>
-          <defs>
-            <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#7c3aed" />
-              <stop offset="100%" stop-color="#120b2d" />
-            </linearGradient>
-            <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f97316" />
-              <stop offset="100%" stop-color="#ea580c" />
-            </linearGradient>
-          </defs>
+      <div class="hero-badge-container">
+        <!-- Pure CSS/SVG industrial accent badge -->
+        <svg viewBox="0 0 100 100" style="width: 100%; max-width: 300px; filter: drop-shadow(var(--shadow-glow));">
+          <polygon points="50,5 95,25 95,75 50,95 5,75 5,25" fill="#1a1a1e" stroke="#ffcc00" stroke-width="4" />
+          <path d="M35,35 L65,35 L65,45 L50,45 L50,55 L65,55 L65,65 L35,65 Z" fill="none" stroke="#ffcc00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="50" y="82" font-family="'Outfit', sans-serif" font-weight="800" font-size="10" fill="#f5f5f7" text-anchor="middle">PREMIUM AUTO</text>
         </svg>
       </div>
     </div>
   </section>
 
-  <!-- Course Explorer Section -->
-  <section class="courses-section" id="cursos">
+  <!-- Services Highlights -->
+  <section class="services-highlight" id="servicos">
     <div class="container">
-      <div class="section-intro">
-        <span class="section-tag">Nossas Formações</span>
-        <h2 class="section-title">Encontre seu Próximo Passo</h2>
-        <p class="section-desc">Filtre por categoria ou pesquise diretamente o tema de seu interesse em nosso catálogo de formações aceleradas.</p>
+      <div class="section-header">
+        <span class="section-tag">Nossa Oficina</span>
+        <h2 class="section-title">Especialidades Mecânicas</h2>
       </div>
-
-      <!-- Filter Controls -->
-      <div class="filter-bar">
-        <div class="search-input-wrapper">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" class="search-input" id="search-course" placeholder="Pesquisar por título ou descrição...">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-car-battery"></i></div>
+          <h3 class="service-title">Injeção & Elétrica</h3>
+          <p class="service-desc">Diagnóstico eletrônico avançado por scanner para detectar falhas em sensores, baterias e circuitos.</p>
         </div>
-        <select class="filter-select" id="category-filter">
-          <option value="all">Todas Categorias</option>
-          <option value="tech">Tecnologia & Dev</option>
-          <option value="design">UX/UI & Design</option>
-          <option value="business">Negócios & Marketing</option>
-        </select>
-      </div>
-
-      <!-- Courses Grid -->
-      <div class="courses-grid" id="courses-grid">
-        <!-- JS dynamically renders cards here -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3 class="service-title">Freios & Suspensão</h3>
+          <p class="service-desc">Substituição de discos, pastilhas, fluido de freio, amortecedores e peças do sistema de direção.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-oil-can"></i></div>
+          <h3 class="service-title">Troca de Óleo</h3>
+          <p class="service-desc">Utilização dos melhores lubrificantes recomendados pelo fabricante para garantir a vida útil do motor.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3 class="service-title">Motor & Câmbio</h3>
+          <p class="service-desc">Retífica completa de motor, reparos em câmbio manual e automático com peças de qualidade.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Enrollment Simulator Section -->
+  <!-- Simulator Section -->
   <section class="simulator-section" id="simulador">
     <div class="container">
-      <div class="sim-grid">
-        <!-- Simulator Info -->
-        <div class="sim-info">
-          <span class="section-tag">Matrícula Inteligente</span>
-          <h2>Planeje seu Investimento sem Compromisso</h2>
-          <p>
-            Escolha o curso ideal, selecione o plano de pagamento com descontos progressivos e adicione complementos de mentoria dedicada.
-          </p>
-
-          <div class="step-item">
-            <div class="step-number">1</div>
-            <div class="step-text">
-              <h4>Escolha da Frequência</h4>
-              <p>Os planos semestral e anual concedem descontos de 10% e 20% sobre as mensalidades base.</p>
-            </div>
+      <div class="section-header">
+        <span class="section-tag">Simulador de Serviços</span>
+        <h2 class="section-title">Simule Seu Orçamento</h2>
+      </div>
+      
+      <div class="simulator-grid">
+        <!-- Form Side -->
+        <div class="simulator-form-side">
+          <div class="form-group">
+            <label class="form-label" for="car-type">1. Tipo do Veículo</label>
+            <select class="form-select" id="car-type">
+              <option value="hatch">Carro Compacto / Hatch</option>
+              <option value="sedan">Sedan Médio</option>
+              <option value="suv">SUV / Crossover</option>
+              <option value="pickup">Pick-up / Utilitário</option>
+              <option value="sport">Esportivo / Importado</option>
+            </select>
           </div>
 
-          <div class="step-item">
-            <div class="step-number">2</div>
-            <div class="step-text">
-              <h4>Suporte Customizado</h4>
-              <p>Adicione mentorias individuais ao vivo semanalmente para acelerar o aprendizado prático.</p>
-            </div>
-          </div>
+          <div class="form-group">
+            <label class="form-label">2. Escolha os Serviços Necessários</label>
+            <div class="services-selection-grid">
+              
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="alignment" checked>
+                <span class="checkmark"></span>
+                <span class="service-label-text">Alinhamento & Balanc.</span>
+              </label>
 
-          <div class="step-item">
-            <div class="step-number">3</div>
-            <div class="step-text">
-              <h4>Acesso Imediato</h4>
-              <p>Faça a pré-matrícula para reservar sua vaga. O time acadêmico enviará os dados para início das aulas.</p>
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="oil">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Troca de Óleo & Filtros</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="brakes">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Pastilhas e Freios</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="suspension">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Suspensão e Pivôs</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="diagnose">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Diagnóstico Eletrônico</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="electrical">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Instalações Elétricas</span>
+              </label>
+
             </div>
           </div>
         </div>
 
-        <!-- Simulator Form & Interactive Card -->
-        <div class="sim-card">
-          <div class="alert-success" id="enrollment-success"></div>
+        <!-- Result Side -->
+        <div class="simulator-result-side">
+          <div>
+            <h3 class="summary-title">Resumo do Orçamento</h3>
+            <ul class="summary-list" id="summary-items">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+          <div>
+            <div class="total-container">
+              <span class="total-label">Estimativa Total</span>
+              <span class="total-amount" id="total-amount">R$ 0,00</span>
+            </div>
+            <a href="#agendamento" class="btn-primary" style="width: 100%;" id="btn-go-schedule"><i class="fa-solid fa-calendar-check" style="margin-right: 8px;"></i> Prosseguir para Agendamento</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scheduler Section -->
+  <section class="scheduler-section" id="agendamento">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Agendamento Online</span>
+        <h2 class="section-title">Agende Seu Horário</h2>
+      </div>
+
+      <div class="scheduler-container">
+        <!-- Success Alert -->
+        <div class="alert-box" id="success-alert"></div>
+
+        <form id="scheduler-form">
+          <div class="scheduler-grid">
+            <div class="form-group">
+              <label class="form-label" for="client-name">Seu Nome Completo</label>
+              <input type="text" class="form-input" id="client-name" required placeholder="Ex: João da Silva">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="client-phone">Celular com DDD</label>
+              <input type="tel" class="form-input" id="client-phone" required placeholder="Ex: (11) 99999-9999">
+            </div>
+          </div>
           
-          <form id="enrollment-form">
+          <div class="scheduler-grid">
             <div class="form-group">
-              <label class="form-label" for="student-name">Nome Completo</label>
-              <input type="text" class="form-input" id="student-name" required placeholder="Digite seu nome completo">
+              <label class="form-label" for="client-date">Data Desejada</label>
+              <input type="date" class="form-input" id="client-date" required>
             </div>
-            
             <div class="form-group">
-              <label class="form-label" for="student-email">Endereço de E-mail</label>
-              <input type="email" class="form-input" id="student-email" required placeholder="nome@provedor.com">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="sim-course">Selecione o Curso</label>
-              <select class="form-select" id="sim-course">
-                <!-- Loaded dynamically -->
+              <label class="form-label" for="client-time">Horário Disponível</label>
+              <select class="form-select" id="client-time" required>
+                <option value="08:00">08:00</option>
+                <option value="09:30">09:30</option>
+                <option value="11:00">11:00</option>
+                <option value="13:30">13:30</option>
+                <option value="15:00">15:00</option>
+                <option value="16:30">16:30</option>
               </select>
             </div>
+          </div>
 
+          <div class="scheduler-grid full">
             <div class="form-group">
-              <label class="form-label" for="sim-plan">Escolha o Plano</label>
-              <select class="form-select" id="sim-plan">
-                <option value="monthly">Mensal Recorrente (Sem desconto)</option>
-                <option value="semiannual">Semestral (10% de desconto)</option>
-                <option value="annual">Anual Parcelado (20% de desconto)</option>
-              </select>
+              <label class="form-label" for="client-notes">Observações do Problema (Opcional)</label>
+              <input type="text" class="form-input" id="client-notes" placeholder="Ex: Barulho na roda dianteira esquerda ao frear">
             </div>
+          </div>
 
-            <div class="form-group">
-              <label class="form-label">Adicionais Extras</label>
-              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
-                  <input type="checkbox" id="sim-mentorship" style="width: 18px; height: 18px; accent-color: var(--color-primary);">
-                  <span>Adicionar Mentoria Individual (+ R$ 99/mês)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
-                  <input type="checkbox" id="sim-certificate" style="width: 18px; height: 18px; accent-color: var(--color-primary);">
-                  <span>Certificado Impresso de Conclusão (+ R$ 150 taxa única)</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Pricing Breakdown -->
-            <div class="cost-breakdown">
-              <div class="cost-row">
-                <span>Mensalidade Base:</span>
-                <span id="breakdown-base">R$ 0,00</span>
-              </div>
-              <div class="cost-row">
-                <span>Desconto Especial:</span>
-                <span id="breakdown-discount" style="color: #10b981;">Nenhum</span>
-              </div>
-              <div class="cost-row">
-                <span>Adicionais Ativados:</span>
-                <span id="breakdown-addons">Nenhum</span>
-              </div>
-              <div class="cost-row total">
-                <span>Total Estimado:</span>
-                <span id="breakdown-total">R$ 0,00</span>
-              </div>
-            </div>
-
-            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 25px;">
-              <i class="fa-solid fa-user-plus" style="margin-right: 8px;"></i> Efetuar Pré-Matrícula
-            </button>
-          </form>
-        </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;" id="scheduler-submit-btn">
+            <i class="fa-regular fa-paper-plane" style="margin-right: 8px;"></i> Confirmar Agendamento de Revisão
+          </button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-grid">
+    <div class="container footer-container">
       <div class="footer-logo">
-        <i class="fa-solid fa-graduation-cap"></i> Ninja<span>Academy</span>
+        <i class="fa-solid fa-gears"></i> Ninja<span>Auto</span>
       </div>
       <div>
-        <p>&copy; 2026 NinjaAcademy. Todos os direitos reservados. Projeto Portfólio.</p>
+        <p>&copy; 2026 NinjaAuto. Todos os direitos reservados. Projeto Portfólio.</p>
       </div>
     </div>
   </footer>
